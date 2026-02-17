@@ -46,15 +46,14 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          {/* Right: Contact form (mailto-based) */}
+          {/* Right: Contact form (Formspree) */}
           <motion.form
             initial={mounted ? { opacity: 0, y: 20 } : false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            action={`mailto:${siteConfig.email}`}
+            action="https://formspree.io/f/mbdayaky"
             method="POST"
-            encType="text/plain"
             className="space-y-4"
           >
             <div>
